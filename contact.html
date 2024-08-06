@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Cyber Cafe</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <a href="index.html">
+                <img id="ll" src="logo.png" alt="CyberHub"> Cyber Hub
+            </a>
+        </div>
+        <div class="nav-links" id="nav-links">
+            <a href="index.html">Home</a>
+            <a href="About us.html">About Us</a>
+            <a href="#">Services</a>
+            <a href="#">Pages</a>
+            <a href="#">Blog</a>
+            <a href="contact.html">Contact</a>
+            <a href="#" class="btn-get-quotes">Get Free Quotes</a>
+        </div>
+        <div class="hamburger" id="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </div>
+
+    <div class="contact-us">
+        <h1>Contact Us</h1>
+        <p>If you have any questions or need assistance, please feel free to reach out to us using the form below or through our contact information.</p>
+        
+        <form action="submit_form.php" method="post" class="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            
+            <button type="submit" class="btn-submit">Send Message</button>
+        </form>
+        
+        <div class="contact-info">
+            <h2>Our Contact Information</h2>
+            <p>Email: <a href="mailto:info@cyberhub.com">info@cyberhub.com</a></p>
+            <p>Phone: +1-800-123-4567</p>
+            <p>Address: 123 Cyber Street, Tech City, TX 75001</p>
+        </div>
+    </div>
+
+    <div class="social-media">
+        <a href="#" class="social-btn"><img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube"> YouTube</a>
+        <a href="#" class="social-btn"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/WhatsApp_logo-color-vertical.svg/75px-WhatsApp_logo-color-vertical.svg.png" alt="WhatsApp"> WhatsApp</a>
+        <a href="#" class="social-btn"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram"> Instagram</a>
+        <a href="#" class="social-btn"><img src="https://upload.wikimedia.org/wikipedia/commons/8/81/LinkedIn_icon.svg" alt="LinkedIn"> LinkedIn</a>
+        <a href="#" class="social-btn"><img src="https://logos-world.net/wp-content/uploads/2023/08/X-Logo.png" alt="Twitter"> Twitter</a>
+        <a href="#" class="social-btn"><img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook"> Facebook</a>
+        <a href="#" class="social-btn"><img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram"> Telegram</a>
+    </div>
+</body>
+</html>
