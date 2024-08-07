@@ -3,6 +3,7 @@ body {
     font-family: Arial, sans-serif;
     background-color: #111827;
     color: white;
+
 }
 
 .navbar {
@@ -26,11 +27,10 @@ body {
     margin-left: 20px;
     text-decoration : none;
     size: 50px;
-    
 }
 
 .navbar .logo img {
-    height: 80px;;
+    height: 80px;
     margin-right: 10px;
     margin-top: 0px;
     padding-top: 0px;
@@ -40,12 +40,27 @@ body {
     display: flex;
     align-items: center;
 }
+.navbar a:hover {
+    font-weight: bold;
+}
 
 .navbar .nav-links a {
     color: white;
     text-decoration: none;
     margin: 0 15px;
     padding-right: 25px;
+}
+.navbar-toggle {
+    display: none;
+    font-size: 28px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.navbar-links {
+    display: flex;
 }
 
 .navbar .nav-links a:hover {
@@ -64,24 +79,24 @@ body {
     background-color: white;
     margin: 4px;
 }
-
-@media (max-width: 768px) {
-    .nav-links {
+@media (max-width: 600px) {
+    .navbar-links {
         display: none;
         flex-direction: column;
-        position: absolute;
-        top: 60px;
-        right: 0;
-        background-color: #1f2937;
         width: 100%;
-        text-align: right;
     }
 
-    .nav-links.active {
-        display: flex;
+    .navbar-links a {
+        text-align: center;
+        padding: 10px;
+        border-top: 1px solid #575757;
     }
 
-    .hamburger {
+    .navbar-toggle {
+        display: block;
+    }
+
+    .navbar-links.show {
         display: flex;
     }
 }
@@ -89,6 +104,10 @@ body {
 .hero {
     text-align: center;
     padding: 100px 20px;
+    background-image: url('https://wallpaperaccess.com/full/1673338.jpg');
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-position: center; /
 }
 
 .hero h1 {
@@ -113,14 +132,15 @@ body {
     cursor: pointer;
 }
 
-.btn-get-started {
-    background-color: #3b82f6;
-    color: white;
-}
-
-.btn-contact {
-    background-color: #3b82f6;
-    color: white;
+.btn-get-started, .btn-contact {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    background-color: #61dafb;
+    color: #282c34;
+    transition: background-color 0.3s;
 }
 
 .btn-get-started:hover, .btn-contact:hover {
@@ -156,9 +176,6 @@ body {
 .social-btn:hover {
     background-color: #e0e0e0;
 }
-
-
-
 
 footer {
     background-color: #333;
@@ -213,7 +230,7 @@ footer {
 
 .main-content {
     padding: 20px;
-    background: #fff;
+    background: rgb(252, 252, 252,0.5);
     margin-top: 20px;
     border-radius: 8px;
     color: black;
@@ -238,6 +255,27 @@ ul {
 ul li {
     margin: 5px 0;
 }
+
+
+.flo  {
+    padding-top: 50px;
+}
+
+.brd{
+    margin-top: 80px;
+    /* padding-top: 20px; */
+}
+
+.abs{
+    margin: 40px;
+    background-image: url(cllg.jpg);
+    background-size: cover;
+    background-size: 100% ;
+    background-repeat: no-repeat;
+}
+
+
+
 
 /* Contact page */
 
@@ -299,3 +337,108 @@ ul li {
 .btn-submit:hover {
     opacity: 0.8;
 }
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+main {
+    padding: 2rem;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+}
+
+
+
+/* Body */
+
+.he {
+    background: #007BFF;
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.he h2 {
+    margin: 0 0 1rem;
+}
+
+.content-section {
+    padding: 2rem 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.content-section h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.content-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.content-section ul li {
+    margin-bottom: 0.5rem;
+}
+
+.content-section article {
+    margin-bottom: 1.5rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 0.5rem;
+}
+
+form input,
+form textarea {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    padding: 0.7rem;
+    background: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+form button:hover {
+    background: #007BFF;
+}
+
